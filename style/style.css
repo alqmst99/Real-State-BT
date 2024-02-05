@@ -49,6 +49,7 @@ header .navbar-toggler.collapsed{
 }
 
 /* HOME */
+
 .home .carousel .w-100-height{
     height: 100vh;
     width: 100%;
@@ -94,3 +95,90 @@ header .navbar-toggler.collapsed{
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
+.home .carousel .card-bottom{
+    right: 0;
+
+    margin-top: -178%;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0);
+}
+.home .carousel .card-bottom .card-text{
+color: #aeaeae ;
+}
+
+/* POPULAR */
+.popular{
+    background-color: rgba(161, 161, 161, 0.712);
+}
+
+.popular .container .arrow-icon{
+    font-size: 28px;
+    font-weight: 800;
+}
+
+/* LOGO */
+.logo{margin-top: -15%;
+}
+.logo .quote{
+    margin-top: 25%;
+}
+.logo .quote h2,
+.logo .quote p,
+.logo .quote h6{
+    color: #b5b5b5;
+}
+.logo .log img{
+    width: 55%;
+}
+
+/* SERVICES */
+.services{
+
+    padding: 100px 0;
+
+    background-color: rgba(161, 161, 161, 0.712);
+
+}
+.services .text-about{
+    margin-top: 40px;
+}
+
+/* BLOGS */
+.blog{
+    background-color: rgba(161, 161, 161, 0.712);
+    padding-bottom: 40px;
+}
+.blog .container button{
+   background: #d4e9ff;
+}
+
+/* REVIEWS */
+.reviews{
+    padding-top: 40px;
+}
+.reviews .card p{
+    color: rgb(204, 201, 201);
+}
+
+
+/* Mobile Resposive */
+
+@media only screen and (max-width:767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel .carousel-caption h5{
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    .carousel .carousel-caption p{
+        padding: 10px 15px;
+        font-size: 15px;
+
+    }
+    .carousel .card-bottom{
+        display: none;
+    }
+}
+
