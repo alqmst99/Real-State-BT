@@ -38,7 +38,7 @@
 
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" aria-current="page" href="#homeAutoplaying">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#popular">Popular</a>
@@ -56,7 +56,7 @@
               <a class="nav-link" href="#questions">Question</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link btn text-white bg-dark px-3 rounded-0" href="#">Contact Us</a>
+              <a class="nav-link btn text-white bg-dark px-3 rounded-0" href="./pages/contact.html">Contact Us</a>
             </li>
           </ul>
 
@@ -68,8 +68,8 @@
   <!-- Main -->
   <main>
     <!-- HOME -->
-    <section class="home" id="home">
-      <div id="homeAutoplaying" class="carousel slide">
+    
+      <section id="homeAutoplaying" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#homeAutoplaying" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -118,8 +118,7 @@
         <!-- CARDS -->
         <div class="col-md-4 z-1 position-absolute card-bottom card mb-3 card-color">
           <div class="row align-items-center">
-
-            <div class="col-md-9">
+            <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title text-light">Card title</h5>
                 <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in to
@@ -127,22 +126,19 @@
                 <p class="card-text"><small class="text-white">Last updated 3 mins ago</small></p>
               </div>
             </div>
-            <div class="col-md-3 ">
+            <div class="col-md-4 image">
               <img src="./assets/project-3.jpg" class="img-fluid rounded-start" alt="card-img">
             </div>
           </div>
         </div>
-      </div>
-
-
-    </section>
+      </section>
     <!-- POPULAR -->
-    <section class="popular" id="popular">
+    <section class="popular pt-5" id="popular">
       <div class="container">
         <p class="pt-5">Popular</p>
         <div class="d-flex">
           <h2>Our Popular Residence</h2>
-          <h6 class="ms-auto">Explore All <span class="arrow-icon">&rarr;</span></h6>
+          <a href="/pages/popular.html" class="ms-auto text-decoration-none">Explore All <span class="arrow-icon">&rarr;</span></a>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
           <div class="col">
@@ -157,7 +153,7 @@
                   <p class="mx-4 text-muted card-text"><i class="fas fa-compass"></i> 2000 m2</p>
                 </div>
                 <div class="d-flex my-2">
-                  <button class="btn btn-lg text-white bg-dark px-4 rounded-0">Book Now</button>
+                  <button class="btn btn-lg text-white bg-dark px-4 rounded-0"  data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Book Now</button>
                   <h5 class="my-auto ms-auto">$20,130,024</h5>
                 </div>
 
@@ -202,16 +198,48 @@
               </div>
             </div>
           </div>
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" style="display:none;" aria-modal="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="card border-0 rounded-0">
+               <img src="./../assets/home1.jpg" class="card-img-top rounded-0" alt="image1">
+               <div class="card-body">
+                 <p class="card-text text-muted">Islamabad, Pakistan</p>
+ 
+                 <div class="d-flex justify-content-center mt-3">
+                   <p class="mx-4 text-muted card-text"><i class="fas fa-car"></i>bed</p>
+                   <p class="mx-4 text-muted card-text"><i class="fas fa-play"></i>8 * 8</p>
+                   <p class="mx-4 text-muted card-text"><i class="fas fa-compass"></i> 2000 m2</p>
+                 </div>
+                 <div class="d-flex my-2">
+                  <h5>Price:</h5>
+                   <h5 class="my-auto ms-auto">$20,130,024</h5>
+                 </div>
+                 <div class="my-2">
+                  <h5>Description</h5>
+                   <p class="my-auto ms-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nemo aliquam earum eligendi quod? Ab animi veritatis quis, similique nulla atque eius. Pariatur, voluptate eligendi impedit amet rem culpa libero!</p>
+                 </div>
+
+               </div>
+
+             </div>
+             <div class="modal-footer">
+              <button type="button" class="btn text-white bg-dark w-100 rounded-0" onclick="window.location.href='./pages/contact.html'">Contact</button>
+            </div>
+              </div>
+             
+           </div>
+           </div>
         </div>
       </div>
     </section>
     <!-- Logos + Quotes -->
-    <section class="logo bg-dark" id="logos">
+    <section class="logo bg-dark  pt-5" id="logos">
 
       <div class="container pt-5">
         <div class="quote row">
           <div class="col-lg-4">
-            <h2>Hammid RAzza</h2>
+            <h2>Hammid Razza</h2>
             <p>Founder Salord</p>
           </div>
           <div class="col-lg-8 mb-5">
@@ -241,7 +269,7 @@
       </div>
     </section>
     <!-- Services -->
-    <section class="services about" id="services">
+    <section class="services about pt-5" id="services">
       <div class="text-center pb-5">
         <h2>Our Services</h2>
       </div>
@@ -275,16 +303,14 @@
 
         </div>
       </div>
-
-
     </section>
     <!-- Blogs -->
-    <section class="blog " id="blog">
+    <section class="blog  pt-5" id="blog">
       <div class="container">
         <p class="pt-5">Blog</p>
         <div class="d-flex">
           <h2>Lastest Housing Infomation</h2>
-          <button class="btn text-white bg-dark px-4 btn-md ms-auto rounded-0">See All Articles</button>
+          <button class="btn text-white bg-dark px-4 btn-md ms-auto rounded-0"><a href="./pages/blogs.html" class="text-decoration-none text-light">See All Articles</a></button>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
           <div class="col">
@@ -331,7 +357,7 @@
       </div>
     </section>
     <!-- Reviews -->
-    <section class="reviews bg-dark" id="reviews">
+    <section class="reviews bg-dark  pt-5" id="reviews">
       <div class="container pt-5">
         <div class="d-flex">
           <h2 class="text-light">What Our Custumers <br>Say about Us</h2>
@@ -390,11 +416,103 @@
       </div>
 
     </section>
+    <!-- Questionary -->
+    <section class="questions pb-2 pt-5" id="questions">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 col-12 mt-md-3 text-about">
+            <div class="about-text">
+              <p>Questions</p>
+              <h2>Frequently Asked <br> Questions</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, quos accusantium sunt aspernatur
+                laborum ab atque, maiores aliquam repudiandae, quidem cumque enim fuga quisquam repellat voluptate
+                fugiat magni tempora.</p>
+              <a href="" class="btn text-white bg-dark px-3 rounded-0">See More</a>
+            </div>
+          </div>
+          <div class="accordion col-lg-7 col-md-12 col-12" id="accordionQuestion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Question 1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionQuestion">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Question 2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionQuestion">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Question 3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionQuestion">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
-  <footer>
-
+  <footer class="bg-dark bg-footer">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <h5 class="text-light"> About Us</h5>
+      <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, magnam. Repellat dolore delectus quod at.</p>
+      <p class="text-light"><i class="fa fa-location mx-2"></i>568-135-697</p>
+      <p class="text-light"><i class="fa fa-phone mx-2"></i>(+65) 0564 4856789</p>
+      <p class="text-light"><i class="fa fa-envelope mx-2"></i>example@email.com</p>
+    </div>
+    <div class="col-lg-3">
+      <h5 class="text-light">Quick Links</h5>
+      <ul class="list-unstyled">
+        <li class="mt-1"><a href="#homeAutoplaying" class="text-light text-decoration-none">Home</a></li>
+        <li class="mt-1"><a href="#popular" class="text-light text-decoration-none">Popular</a></li>
+        <li class="mt-1"><a href="#services" class="text-light text-decoration-none">Services</a></li>
+        <li class="mt-1"><a href="#blogs" class="text-light text-decoration-none">Blogs</a></li>
+        <li class="mt-1"><a href="#reviews" class="text-light text-decoration-none">Reviews</a></li>
+      </ul>
+    </div>
+    <div class="col-lg-3">
+      <h5 class="text-light">Stay Connected</h5>
+      <ul class="list-unstyled">
+        <li class=" mt-1"><a href="#" class="text-light text-decoration-none"><i class="fa-brands fa-facebook mx-2"></i>Facebook</a></li>
+        <li class=" mt-1"><a href="#" class="text-light text-decoration-none"><i class="fa-brands fa-instagram mx-2"></i>Instagram</a></li>
+        <li class=" mt-1"><a href="#" class="text-light text-decoration-none"><i class="fa-brands fa-linkedin-in mx-2"></i>Linkedin</a></li>
+        <li class=" mt-1"><a href="#" class="text-light text-decoration-none"><i class="fa-brands fa-twitter mx-2"></i>Twitter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <p class="copy text-center text-light">
+        Copyright &copy; 2023 <a href="#" class="text-decoration-none"> FSTailSolution</a>. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</div>
   </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
