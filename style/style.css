@@ -20,12 +20,13 @@ html {
 
     font-weight: 600;
 }
-.modal-dialog{
+
+.modal-dialog {
 
     background: white 0.1;
 }
 
-.page-link{
+.page-link {
     background: transparent !important;
     color: black !important;
     text-decoration: none !important;
@@ -34,7 +35,8 @@ html {
     font-weight: 600;
     border-radius: 0;
 }
-.page-link:hover{
+
+.page-link:hover {
     background-color: black !important;
     color: white !important;
 
@@ -100,18 +102,19 @@ header .navbar-toggler.collapsed {
 
 }
 
- .carousel .carousel-item {
+.carousel .carousel-item {
     min-height: 300px;
 }
 
- .carousel .carousel-caption {
+.carousel .carousel-caption {
     text-align: left;
 
     text-shadow: 0 0 15px black;
     margin-bottom: 200px;
     z-index: 2;
 }
- .carousel .carousel-caption h5 {
+
+.carousel .carousel-caption h5 {
     font-size: 60px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -120,23 +123,23 @@ header .navbar-toggler.collapsed {
     text-align: left;
 }
 
- .carousel .carousel-caption p {
+.carousel .carousel-caption p {
     width: 60%;
     font-size: 16px;
     line-height: 1.9;
     text-align: left;
 }
 
- .carousel .carousel-caption input {
+.carousel .carousel-caption input {
     padding: 0.7rem 1rem;
 }
 
- .carousel .carousel-caption .btn-light:hover {
+.carousel .carousel-caption .btn-light:hover {
     background: black;
     color: white;
 }
 
- .carousel-inner::before {
+.carousel-inner::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -147,22 +150,24 @@ header .navbar-toggler.collapsed {
     z-index: 1;
 }
 
- .card-bottom {
-   right: 0.5%;
-   padding-right: 15px;
-margin-top: -180px;
+.card-bottom {
+    right: 0.5%;
+    padding-right: 15px;
+    margin-top: -180px;
     border-radius: 0;
     background-color: rgba(0, 0, 0);
 }
 
- .card-bottom .card-text {
+.card-bottom .card-text {
     color: #aeaeae;
 }
-.card-bottom image{
+
+.card-bottom image {
     width: 100%;
     border-radius: 0;
 }
-.card-bottom img{
+
+.card-bottom img {
     width: max-content;
     height: fit-content;
 }
@@ -198,11 +203,8 @@ margin-top: -180px;
 
 /* SERVICES */
 .services {
-
     padding: 100px 0;
-
     background-color: rgba(161, 161, 161, 0.712);
-
 }
 
 .services .text-about {
@@ -228,7 +230,7 @@ margin-top: -180px;
     color: rgb(204, 201, 201);
 }
 
-.reviews  .carousel-inner::before {
+.reviews .carousel-inner::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -238,11 +240,12 @@ margin-top: -180px;
     background-color: rgb(49, 49, 49);
     z-index: 1;
 }
-.reviews .carousel-inner img{
-width: 100%;
-height: 200px;
 
+.reviews .carousel-inner img {
+    width: 100%;
+    height: 200px;
 }
+
 /* QUESTIONS */
 .questions {
     background-color: rgba(161, 161, 161, 0.712);
@@ -257,10 +260,11 @@ height: 200px;
     color: black !important;
     font-weight: 600;
 }
-.accordion-button:not(.collapsed) {
 
+.accordion-button:not(.collapsed) {
     box-shadow: none !important;
 }
+
 .accordion-button:focus {
     z-index: 3;
     border-color: none !important;
@@ -273,71 +277,80 @@ height: 200px;
     padding: 50px 0 30px;
 
 }
-.bg-footer li{
+
+.bg-footer li {
     cursor: pointer;
 }
-.bg-footer  li:hover{
+
+.bg-footer li:hover {
     transform: scale(1.1) !important;
     transform: translate(20px) !important;
 }
 
-.bg-footer  li:hover i{
+.bg-footer li:hover i {
     transform: scale(1.2) !important;
     color: #aeaeae;
     transform: translate(-20px) !important;
 }
-.bg-footer .copy a{
-color: #aeaeae;
-font-weight: 800;
+
+.bg-footer .copy a {
+    color: #aeaeae;
+    font-weight: 800;
 }
 
 /* CONTACT */
-.contact{
+.contact {
     background-color: rgba(161, 161, 161, 0.712);
 }
 
 /* Detail */
-.detail{
+.detail {
     background: rgba(161, 161, 161, 0.712) !important;
 }
+
 /* Blog-detail */
-.blog-detail{
+.blog-detail {
     background: rgba(161, 161, 161, 0.712) !important;
 }
-.blog-detail h2{
-    top:60%;
-    left:50%;
+
+.blog-detail h2 {
+    top: 60%;
+    left: 50%;
     font-size: 60px;
     font-weight: 800;
     text-shadow: 0 0 18px white;
 }
-.blog-detail h5{
+
+.blog-detail h5 {
     font-weight: 600;
 }
-.blog-detail p{
+
+.blog-detail p {
     font-weight: 500;
 }
+
 /* Mobile Resposive */
 
-@media only screen and (max-width:960px){
-    .blog-detail h2{
-        top:30%;
-        left:20%;
+@media only screen and (max-width:960px) {
+    .blog-detail h2 {
+        top: 30%;
+        left: 20%;
         font-size: 40px;
         font-weight: 800;
         text-shadow: 0 0 18px white;
     }
 }
 
-@media only screen and (max-width:490px){
-    .blog-detail h2{
-        top:20%;
-        left:20%;
+@media only screen and (max-width:490px) {
+    .blog-detail h2 {
+        top: 20%;
+        left: 20%;
         font-size: 40px;
         font-weight: 800;
         text-shadow: 0 0 18px white;
     }
 }
+
 @media only screen and (max-width:767px) {
     .navbar-nav {
         text-align: center;
